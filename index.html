@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Password Analyzer</h1>
+        <input type="password" id="password" placeholder="Enter your password" />
+
+        <label for="generate">Want to generate a strong password?</label>
+        <input type="checkbox" id="generate" placeholder="Generate password" />
+        <button onclick="analyzePassword()">Analyze</button>
+
+        <div id="result"></div>
+        <div id="report"></div>
+        <div id="recommend"></div>
+        <div id="warn"></div>
+    </div>
+    <canvas id="canvas">
+    <script src="script.js"></script>
+    <script type="module" src="background.js"></script>
+</body>
+</html>
